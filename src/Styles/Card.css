@@ -1,0 +1,85 @@
+.card{
+  border: 1px solid #e0e0e0;
+  background-color: #fff;
+}
+
+.card__tag {
+  font-weight: var(--font-medium);
+  font-size: min(16px, calc(0.5rem + 2vw));
+  padding: 0 0 0 1rem;
+}
+.card__title {
+  width: 80%;
+  font-weight: var(--font-semibold);
+  font-size: min(22px, calc(0.55rem + 2vw));
+  word-wrap: break-word;
+}
+.card__drop{
+  font-size: min(22px, calc(0.55rem + 2vw));
+}
+.card__extra {
+  cursor: pointer;
+}
+.card__desc {
+  font-size: min(19px, calc(0.4rem + 2vw));
+  font-weight: var(--font-regular);
+  line-height: 134.17%;
+  color: #5c5c5c;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card__footer{
+  column-gap: 4px;
+}
+.card__user-img{
+  height: 3rem;
+  width: 3rem;
+  object-fit: cover;
+  object-position: center;
+}
+.card__user-name{
+  font-weight: var(--font-semibold);
+  font-size: min(18px, calc(0.4rem + 2vw));
+}
+.card__footer--big{
+  font-weight: var(--font-medium);
+  font-size: min(14px, calc(0.3rem + 2vw));
+  color: #525252;
+}
+.card__misc--element{
+  line-height: 16px;
+  letter-spacing: -0.01rem;
+  font-weight: var(--font-medium);
+  font-size: min(15px, calc(0.3rem + 2vw));
+}
+.card__misc--element-title{
+  color: #212529;
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card__url{
+  border: 0.7px dashed #a9aeb8;
+  padding: 0.7rem;
+  border-radius: 8px;
+  font-size: 13px !important;
+  font-weight: var(--font-semibold);
+  color:#e56135 !important;
+}
+
+
+@media screen and (max-width: 767.9px) {
+  .card__title {
+    width: 90%;
+  }
+  .card__misc--element-title{
+    max-width: 120px;
+  }
+}
+@media screen and (max-width: 575.9px){
+  .card__misc--element-title{
+    max-width: 80px;
+  }
+}

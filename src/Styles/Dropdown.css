@@ -1,0 +1,29 @@
+
+
+.dropdown-custom{
+    min-width: 200px;
+}
+.dropdown__title,.dropdown__url{
+    line-height: 20.8px;
+}
+.dropdown__title{
+    font-weight: var(--font-medium);
+}
+.dropdown__url{
+    padding-left: 2px;
+    font-weight: var(--font-bold);
+}
+.dropdown__btn{
+    font-weight: var(--font-medium);
+    font-size: 1rem;
+    background-color: #edeef0 !important;
+    color: #000;
+    border: 2px solid transparent !important;
+}
+.dropdown__btn:hover{
+    border: 2px solid #5e5e5e !important;
+}
+.dropdown__btn:focus{
+    box-shadow: none !important;
+    color: #5e5e5e !important;
+}

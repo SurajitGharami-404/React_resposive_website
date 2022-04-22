@@ -1,0 +1,40 @@
+.banner{
+    position: relative;
+    width:100vw;
+    height: 440px;
+    background-color: aquamarine;
+}
+.banner_img{
+  object-fit: cover;
+  object-position: center;
+}
+.banner__overlay{
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.6) 100%);
+}
+.banner__text-container{
+    position: absolute;
+    left: 14.5%;
+    bottom: 18%;
+    color: #fff;
+}
+.banner__title{
+    font-size: min(2.25rem,calc(.55rem + 2vw));
+    font-weight: var(--font-bold);
+    line-height: min(3rem,calc(.175rem + 5vw));
+}
+.banner__subtitle{
+    font-size: min(1rem,calc(.275rem + 2vw)) !important;
+    font-weight: var(--font-regular);
+    line-height: min(1.5rem,calc(.2rem + 2vw));
+}
+@media  screen and (max-width:575.9px) {
+    .banner{
+        height: 236px;
+    }
+    .banner__text-container{
+        left: 1rem;
+        bottom: 2rem;
+    }
+}
